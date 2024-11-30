@@ -1,7 +1,3 @@
-Here’s a professional **README.md** for your website project:
-
----
-
 # **Creator Corner - AI-Powered Video Editing Agency**
 
 ## **Project Description**
