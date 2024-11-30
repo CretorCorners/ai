@@ -1,0 +1,693 @@
+/* Responsive styles */
+
+/* Navigation bar and HOme section  */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+    .home {
+        gap: 10rem;
+    }
+    .home-content h1 {
+        font-size: 4.5rem;
+        margin-left: 5rem;
+    }
+    .home-img img {
+        width: 40vw;
+    }
+    .navbar a {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 50%;
+    }
+    .home {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .home-content {
+        align-items: center;
+        text-align: center;
+    }
+    .home-content h1 {
+        margin-left: 0;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar a {
+        margin: 1rem 0;
+    }
+    #menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+    .home-content h1 {
+        font-size: 3.8rem;
+    }
+    .home-img img {
+        width: 50vw;
+    }
+    header {
+        padding: 3rem 5%;
+    }
+    .social-icons a {
+        margin: 1.5rem 1rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 40%;
+    }
+    .home-content h1 {
+        font-size: 3.2rem;
+    }
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
+    }
+    .btn-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .social-icons a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
+    }
+}
+
+/* Responsive styles for Experience page */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 6rem;
+    }
+    .timeline-item:nth-child(odd) {
+        padding-right: calc(50% + 20px);
+    }
+    .timeline-item:nth-child(even) {
+        padding-left: calc(50% + 20px);
+    }
+    .timeline-content {
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 5rem;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding: 0 20px;
+        text-align: center;
+    }
+    .timeline-item::before {
+        left: 20px; /* Moves the timeline line to the left */
+    }
+    .timeline-dot {
+        left: 15px; /* Aligns the dot with the line */
+    }
+    .timeline-content {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 4rem;
+    }
+    .timeline-content {
+        padding: 15px 30px;
+    }
+    .timeline-date {
+        font-size: 18px;
+    }
+    .timeline-content h3 {
+        font-size: 18px;
+    }
+    .timeline-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 3rem;
+    }
+    .timeline-items {
+        flex-direction: column;
+    }
+    .timeline-item::before {
+        display: none; /* Hides the vertical timeline line */
+    }
+    .timeline-dot {
+        position: relative;
+        left: auto;
+        margin: 0 auto;
+    }
+    .timeline-content {
+        margin: 20px auto;
+        padding: 15px 20px;
+    }
+    .timeline-date {
+        font-size: 16px;
+    }
+    .timeline-content h3 {
+        font-size: 16px;
+    }
+    .timeline-content p {
+        font-size: 14px;
+    }
+}
+
+/* Responsive styles for Service Section */
+@media (max-width: 1200px) {
+    .services h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .services-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout */
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+    .services-container1 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .service-box {
+        height: auto;
+    }
+    .service-info {
+        padding: 4rem 3rem;
+    }
+    .service-info h4 {
+        font-size: 2.5rem;
+    }
+    .service-info p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .services-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+    .service-info {
+        padding: 3rem 2rem;
+    }
+    .service-info h4 {
+        font-size: 2.2rem;
+    }
+    .service-info p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .services h2 {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+    .services-container {
+        gap: 1.5rem;
+    }
+    .service-box {
+        margin-bottom: 2rem;
+    }
+    .service-info {
+        padding: 2.5rem 1.5rem;
+    }
+    .service-info h4 {
+        font-size: 2rem;
+    }
+    .service-info p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .services h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .services-container {
+        padding: 0 1rem;
+    }
+    .service-box {
+        margin-bottom: 1.5rem;
+    }
+    .service-info {
+        padding: 2rem 1rem;
+    }
+    .service-info h4 {
+        font-size: 1.8rem;
+    }
+    .service-info p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive styles for Result Section */
+@media (max-width: 1200px) {
+    .results {
+        padding: 8rem;
+    }
+    .results-boxs {
+        flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .results-box {
+        max-width: 90%;
+        min-height: auto; /* Adjusts height dynamically for content */
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .results {
+        padding: 6rem;
+    }
+    .results-boxs {
+        flex-direction: column; /* Stacks items vertically */
+        gap: 1.5rem;
+    }
+    .results-box {
+        max-width: 95%;
+        margin: 1.5rem auto; /* Centers boxes on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .results {
+        padding: 4rem;
+    }
+    .results-box {
+        max-width: 100%;
+        margin: 1rem 0; /* Reduces margin for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .results {
+        padding: 3rem;
+    }
+    .results-box {
+        margin: 0.5rem 0; /* Makes the layout more compact */
+        border: 2px solid var(--main-color); /* Keeps border consistent */
+    }
+}
+
+
+/* Responsive styles for Testimonila Section */
+@media (max-width: 1200px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr); /* Changes to 2 columns */
+        gap: 2rem; /* Reduces gap for compact display */
+    }
+    .testimonila-item {
+        max-width: 400px; /* Adjust width */
+        min-height: auto; /* Dynamic height for content */
+        margin: 1.5rem; /* Balances spacing */
+        padding: 25px 40px; /* Adjusts padding for better scaling */
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        grid-template-columns: 1fr; /* Single-column layout */
+        gap: 1.5rem;
+    }
+    .testimonila-item {
+        margin: 1rem auto; /* Center-align for single-column layout */
+        max-width: 90%; /* Adapts to smaller screen widths */
+    }
+    .testimonilas-box img {
+        width: 12rem; /* Scales down testimonial images */
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials .heading {
+        font-size: 4rem; /* Reduces heading size */
+        margin-bottom: 4rem;
+    }
+    .testimonilas-box img {
+        width: 10rem; /* Further reduces image size */
+    }
+    .testimonila-item h2 {
+        font-size: 2.4rem; /* Scales heading inside items */
+    }
+    .testimonila-item p {
+        font-size: 1.2rem; /* Scales paragraph text */
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonials {
+        padding: 3rem; /* Adjusts padding for smaller viewports */
+    }
+    .wrapper {
+        gap: 1rem; /* Compact gap for mobile */
+    }
+    .testimonila-item {
+        padding: 20px 30px; /* Compact padding */
+        border-radius: 1rem; /* Softer corners for mobile */
+    }
+    .testimonilas-box img {
+        width: 8rem; /* Further reduces image size for mobile */
+    }
+}
+
+/* Responsive styles for About Us Section */
+@media (max-width: 1200px) {
+    .about-us {
+        flex-direction: column; /* Stacks elements vertically */
+        padding: 4rem 2rem; /* Adjusts padding */
+    }
+    .owner {
+        width: 80%; /* Reduces the width of the owner section */
+        margin-bottom: 3rem; /* Adds spacing between owner section and separator */
+    }
+    .owner .image img {
+        width: 20rem; /* Reduces the image size */
+        height: 20rem; /* Ensures proportional image size */
+    }
+    .separator {
+        height: 30rem; /* Shortens separator height for better proportion */
+    }
+}
+
+@media (max-width: 992px) {
+    .about-us {
+        padding: 3rem 1.5rem; /* Adjusts padding for smaller devices */
+    }
+    .owner {
+        width: 90%; /* Further reduces width */
+    }
+    .owner .image img {
+        width: 18rem; /* Smaller image size for better fitting */
+        height: 18rem; /* Maintains the circle shape */
+    }
+    .owner .details h2 {
+        font-size: 2rem; /* Reduces heading size */
+    }
+    .owner .details p {
+        font-size: 1.4rem; /* Adjusts text size for readability */
+    }
+    .separator {
+        height: 20rem; /* Reduces separator height for mobile screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        padding: 2rem 1rem; /* Further reduces padding for mobile screens */
+    }
+    .owner {
+        width: 100%; /* Full width for owner section on small screens */
+        margin-bottom: 2rem; /* Adds margin for separation */
+    }
+    .owner .image img {
+        width: 15rem; /* Scales down the image */
+        height: 15rem; /* Ensures proportional resizing */
+    }
+    .owner .details h2 {
+        font-size: 1.8rem; /* Slightly smaller heading */
+    }
+    .owner .details p {
+        font-size: 1.3rem; /* Reduces paragraph size for readability */
+    }
+    .separator {
+        display: none; /* Hides the separator on mobile devices */
+    }
+}
+
+@media (max-width: 576px) {
+    .about-us {
+        padding: 2rem 1rem; /* Ensures padding remains compact */
+    }
+    .owner .image img {
+        width: 12rem; /* Scales down the image significantly */
+        height: 12rem; /* Maintains circle shape */
+    }
+    .owner .details h2 {
+        font-size: 1.6rem; /* Reduces heading size */
+    }
+    .owner .details p {
+        font-size: 1.2rem; /* Adjusts text size for very small screens */
+    }
+}
+
+/* Responsive styles for FAQ's Section */
+@media (max-width: 1200px) {
+    .faq-section {
+        padding: 2rem 1rem; /* Ensures proper padding on medium screens */
+    }
+    .faq-container {
+        flex-direction: column; /* Stack the FAQ cards vertically on smaller screens */
+        height: auto; /* Adjust height to fit the content */
+    }
+    .faq-card {
+        min-width: 80%; /* Reduces width for better fitting */
+        max-width: 80%; /* Ensures it doesn't exceed the available width */
+        margin-bottom: 2rem; /* Adds space between cards */
+    }
+}
+
+@media (max-width: 992px) {
+    .faq-section {
+        padding: 1.5rem 1rem; /* Adjust padding for smaller screens */
+    }
+    .faq-title {
+        font-size: 2.5rem; /* Adjust font size for readability */
+    }
+    .faq-container {
+        flex-direction: column; /* Stacks cards vertically on even smaller screens */
+        gap: 1.5rem; /* Reduces gap between the cards */
+    }
+    .faq-card {
+        min-width: 90%; /* Further reduces the card width */
+        max-width: 90%; /* Ensures card fits in the available space */
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 1rem; /* Further reduces padding for small screens */
+    }
+    .faq-title {
+        font-size: 2rem; /* Adjusts the title size for smaller screens */
+    }
+    .faq-container {
+        flex-direction: column; /* Ensures FAQ cards are stacked */
+        gap: 1rem; /* Reduces gap further */
+    }
+    .faq-card {
+        min-width: 95%; /* Increases card width to take more space */
+        max-width: 95%; /* Ensures cards are still proportionally sized */
+        padding: 1.5rem; /* Reduces padding inside the card for better fit */
+    }
+}
+
+@media (max-width: 576px) {
+    .faq-section {
+        padding: 1rem 0.5rem; /* Reduces padding on very small screens */
+    }
+    .faq-title {
+        font-size: 1.8rem; /* Reduces font size for very small screens */
+    }
+    .faq-container {
+        flex-direction: column; /* Stacks cards vertically */
+        gap: 1rem; /* Keeps a smaller gap between cards */
+    }
+    .faq-card {
+        min-width: 100%; /* Full width cards on small screens */
+        max-width: 100%; /* Ensures cards take up the full width */
+        padding: 1rem; /* Smaller padding for better readability */
+    }
+}
+
+/* Responsive styles for Contact Section */
+@media (max-width: 1200px) {
+    .contact {
+        padding: 2rem 1rem; /* Ensures padding is not too large on smaller screens */
+    }
+    .contact form {
+        flex-direction: column; /* Stack form elements vertically on smaller screens */
+        gap: 2rem; /* Adjust the gap between input fields and buttons */
+        margin: 3rem auto; /* Adjust margin for better spacing */
+    }
+    .contact form .input-box {
+        width: 100%; /* Ensure the input box takes full width */
+    }
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 90%; /* Reduce the width to fit smaller screens */
+        margin: 1rem auto; /* Center input fields and add margin for spacing */
+    }
+}
+
+@media (max-width: 992px) {
+    .contact {
+        padding: 2rem 1rem; /* Keeps padding smaller for medium screens */
+    }
+    .contact h2 {
+        font-size: 2.5rem; /* Adjust title size for medium screens */
+    }
+    .contact form {
+        flex-direction: column; /* Stack the form elements */
+        gap: 2rem; /* Adjust gap between elements */
+    }
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 90%; /* Adjust the width of the inputs for better fit */
+        margin: 1rem auto; /* Center input fields and add margin */
+        font-size: 1.6rem; /* Adjust font size for readability */
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 2rem 0.5rem; /* Smaller padding for small screens */
+    }
+    .contact h2 {
+        font-size: 2rem; /* Reduce font size for the heading */
+    }
+    .contact form {
+        flex-direction: column; /* Stack form elements on small screens */
+        gap: 1.5rem; /* Reduces gap between elements */
+    }
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 95%; /* Increase input width for smaller screens */
+        font-size: 1.5rem; /* Adjust font size for better fit */
+        padding: 2rem; /* Slightly smaller padding for small screens */
+    }
+    .contact form .btn {
+        width: 95%; /* Make the button fit the screen */
+        padding: 1.5rem; /* Adjust button padding */
+        font-size: 1.6rem; /* Make the button text smaller */
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        padding: 1.5rem 0.5rem; /* Further reduce padding for very small screens */
+    }
+    .contact h2 {
+        font-size: 1.8rem; /* Further reduce title size */
+    }
+    .contact form {
+        flex-direction: column; /* Stack the form vertically */
+        gap: 1rem; /* Reduce gap between elements */
+    }
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 100%; /* Full width for input fields */
+        font-size: 1.4rem; /* Smaller font size for readability */
+        padding: 1.8rem; /* Adjust padding for small screens */
+    }
+    .contact form .btn {
+        width: 100%; /* Full width button */
+        padding: 1.5rem; /* Adjust padding for small button size */
+        font-size: 1.5rem; /* Slightly smaller button text */
+    }
+}
+
+/* Responsive styles for Footer Section */
+@media (max-width: 1200px) {
+    .footer {
+        padding: 30px 0; /* Reduces padding for medium screens */
+    }
+    .footer .social a {
+        font-size: 22px; /* Adjust icon size for medium screens */
+        width: 35px;
+        height: 35px;
+        line-height: 35px; /* Adjust to fit smaller icons */
+    }
+    .footer ul {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .footer ul li {
+        padding: 0 10px; /* Reduce space between list items */
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        padding: 25px 0; /* Further reduce padding for smaller screens */
+    }
+    .footer .social a {
+        font-size: 20px; /* Make icons smaller */
+        width: 30px;
+        height: 30px;
+        line-height: 30px; /* Adjust to make icons more compact */
+    }
+    .footer ul {
+        font-size: 14px; /* Reduce font size for text */
+    }
+    .footer ul li {
+        display: block; /* Stack list items vertically */
+        padding: 10px 0; /* Add padding for better spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0; /* Smaller padding for smaller screens */
+    }
+    .footer .social a {
+        font-size: 18px; /* Smaller social icon size */
+        width: 28px;
+        height: 28px;
+        line-height: 28px; /* Adjust to fit */
+    }
+    .footer ul {
+        font-size: 12px; /* Smaller font for better fit */
+    }
+    .footer ul li {
+        display: block; /* Ensure list items stack vertically */
+        padding: 8px 0; /* Tighten the spacing between items */
+    }
+    .footer .copyright {
+        font-size: 14px; /* Adjust copyright text size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 15px 0; /* Minimal padding for small screens */
+    }
+    .footer .social a {
+        font-size: 16px; /* Adjust icon size further */
+        width: 25px;
+        height: 25px;
+        line-height: 25px; /* Make icons even smaller */
+    }
+    .footer ul {
+        font-size: 12px; /* Further reduce font size */
+    }
+    .footer ul li {
+        display: block; /* Stack items for smallest screens */
+        padding: 6px 0; /* Smaller gap between list items */
+    }
+    .footer .copyright {
+        font-size: 12px; /* Further reduce the copyright font size */
+    }
+}
+
