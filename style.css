@@ -1582,3 +1582,99 @@ Testimonial click can work properly like other click srvice ya contact*/
     transform: translateY(0);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
+
+/* fixcing the issues */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+section, .content-container {
+    max-width: 100%;
+    padding: 1rem; /* Add some padding for aesthetics */
+    box-sizing: border-box;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to move to the next line */
+    justify-content: center; /* Center-align cards */
+    gap: 1rem; /* Add spacing between cards */
+    padding: 1rem;
+}
+
+.about-card {
+    flex: 1 1 calc(100% - 2rem); /* Make cards take full width minus padding */
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the cards */
+    padding: 1rem;
+}
+
+.home-content {
+    max-width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .about-container, .home-content {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .about-card, .home-img img {
+        width: 100%; /* Ensure elements fit the screen */
+        margin: 0 auto;
+    }
+
+    h1, h2, p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .home-content, .about-container {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .about-card {
+        width: 100%; /* Ensure cards fit the screen width */
+        margin: 0 auto;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    h1, h2, p {
+        font-size: 1rem; /* Adjust font sizes for smaller screens */
+        line-height: 1.4; /* Improve readability */
+    }
+
+    .home-img img {
+        max-width: 100%; /* Ensure images fit the screen width */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .home-content p {
+        word-wrap: break-word; /* Ensures long words or links break to the next line */
+        word-break: break-word; /* Break overly long words */
+        overflow-wrap: break-word;
+        margin: 0; /* Remove extra margins */
+        padding: 0 1rem; /* Add padding for proper alignment within the screen */
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        line-height: 1.5; /* Improve readability */
+        text-align: center; /* Ensure text aligns properly */
+        max-width: 100%; /* Ensure paragraph doesn't exceed screen width */
+        box-sizing: border-box;
+    }
+}
